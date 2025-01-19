@@ -1,6 +1,6 @@
-import React from 'react';
-import InputField from '../molecules/InputField';
-import { Button } from '../../../shared/atoms/Button';
+import React from "react";
+import InputField from "../molecules/InputField";
+import { Button } from "../../../shared/atoms/Button";
 
 interface UserProfileFormProps {
   name: string;
@@ -26,12 +26,7 @@ const UserProfileForm: React.FC<UserProfileFormProps> = ({
       className="space-y-6 bg-white p-6 shadow-md rounded-md"
     >
       {/* Campo Nome */}
-      <InputField
-        id="name"
-        label="Name"
-        value={name}
-        onChange={onNameChange}
-      />
+      <InputField id="name" label="Name" value={name} onChange={onNameChange} />
 
       {/* Campo Email */}
       <InputField
